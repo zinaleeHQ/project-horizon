@@ -105,9 +105,9 @@ project-horizon/
 
 ---
 
-## ✅ JD Alignment
+## ✅ Project Manager Requirements
 
-| Requirement | How This Project Addresses It |
+| Requirement | How This Project Demonstrates It |
 |---|---|
 | *“Lead prioritization based on business impact and resource constraints”* | WSJF matrix with explicit constraint enforcement applied before scoring |
 | *“Utilize data insights to support product prioritization decisions”* | AI-driven scoring replaces intuition with structured, reproducible evaluation |
