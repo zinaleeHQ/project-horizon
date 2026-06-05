@@ -119,7 +119,7 @@ project-horizon/
 
 ## ✅ Project Manager Methodology Intervention
 
-WSJF, or any other methodology, is an input to the decision, not the decision itself. In this example, using these data points, the WSJF scores actually kept Epics 2 and 3 in the same order — Clinician Workflow came before the Billing Dashboard either way. The Billing Dashboard measures modifier error rates. But if you deploy that dashboard before you've fixed the workflow that's generating those errors, you're measuring a broken state you're already committed to changing; the baseline is already obsolete. I am documenting this explicitly because the more important skill to demonstrate is knowing when the framework gets you most of the way there, and knowing when a human intervention has to override it and say why.
+With the mock data used here, the WSJF framework scores produce the right sequence of work — but the PM must catch the dependencies the scores alone don't document. If the billing dashboard is deployed before the clinician workflow is fixed, it measures a broken baseline: every future improvement gets compared to a number that includes waste you've already committed to removing. WSJF, or any other methodology, is an input to the decision, not the decision itself.
 
 ---
 
