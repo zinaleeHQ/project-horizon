@@ -1,4 +1,4 @@
-# PROCESS.md — How I Built This Project
+# The PROCESS — How I Built This Project
 
 *By Zina Lee, Product Manager*
 
