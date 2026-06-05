@@ -1,6 +1,6 @@
 # PROCESS.md — How I Built This Project
 
-*By Zina Lee, Enterprise Product Manager*
+*By Zina Lee, Product Manager*
 
 ---
 
@@ -42,6 +42,13 @@ This is the kind of judgment call that a scoring engine surfaces but cannot make
 
 ---
 
+
+### A Note on SAFe Terminology
+
+The work items in this project are called "Epics" in the Jira sense — large, team-deliverable items scoped within a single PI. In strict SAFe, these would be Features: PI-bound items that feed into Portfolio-level Epics, WSJF’d at the Program Backlog level rather than the Portfolio level. SAFe Epics can cross PI boundaries; the items here cannot and do not. The distinction is deliberate — this project applies WSJF at the Feature/team level, which is the more common real-world application for a single-team context.
+
+---
+
 ## How I Directed the AI
 
 ### What the AI Did
@@ -60,7 +67,7 @@ This is the kind of judgment call that a scoring engine surfaces but cannot make
 
 ### The Prompt Engineering Approach
 
-The WSJF scoring prompt (`/prompts/wsjf-scoring-prompt.md`) is structured in three layers: context ingestion, audience variable logic, and output enforcement. The key design decisions were:
+The WSJF scoring prompt '`/prompts/wsjf-scoring-prompt.md`' is structured in three layers: context ingestion, audience variable logic, and output enforcement. The key design decisions were:
 
 - **Separating constraint filtering from scoring** so that hard guardrails (HIPAA, vendor boundaries, deployment rules) eliminate ineligible items *before* WSJF math begins
 - **Requiring explicit reasoning per item** rather than just a score, to surface the logic behind each number and make it auditable
