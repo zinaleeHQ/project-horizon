@@ -1,12 +1,12 @@
 # Output: Jira-Ready Epic & User Story Structure
 
 **Generated from:** WSJF Scorecard Top 3 Epics
-**Format:** Jira-compatible Epic â Story hierarchy
+**Format:** Jira-compatible Epic → Story hierarchy
 **Story Point Scale:** Fibonacci (1, 2, 3, 5, 8, 13)
 
 ---
 
-## ð¦ EPIC 1: HL7 Data Mapping Upgrade â HL7 interface engine
+## 🟦 EPIC 1: HL7 Data Mapping Upgrade — HL7 interface engine
 
 **Epic Goal:** Resolve active HL7 data integrity failures at Partner Health System A and upgrade the HealthConnect translation layer to prevent recurrence across the partner network.
 
@@ -23,26 +23,26 @@
 
 ### Story 1.1: HL7 Translation Layer Audit
 **As an** EMIS Data Engineer
-**I need** a complete audit of current HealthConnect translation mappings for Partner Health System Aâs HL7 feed
+**I need** a complete audit of current HealthConnect translation mappings for Partner Health System A’s HL7 feed
 **So that** I can identify exactly which field mappings are causing data drops and duplicate record creation
 
 **Story Points:** 3
 **Acceptance Criteria:**
-- [ ] Given access to Partner Health System Aâs HL7 feed logs, when I run the audit tool, then all mapping exceptions are exported to a structured report
+- [ ] Given access to Partner Health System A’s HL7 feed logs, when I run the audit tool, then all mapping exceptions are exported to a structured report
 - [ ] Given the audit report, the root-cause mapping failure(s) are identified with specific HL7 segment and field references
 - [ ] Given the audit findings, a remediation plan is documented and reviewed by the Tech Lead before development begins
 
 ---
 
-### Story 1.2: Translation Layer Patch â Partner Health System A Feed
+### Story 1.2: Translation Layer Patch — Partner Health System A Feed
 **As an** EMIS Data Engineer
-**I need** to update the HealthConnect translation layer configuration for Partner Health System Aâs HL7 ADT and ORU message feeds
+**I need** to update the HealthConnect translation layer configuration for Partner Health System A’s HL7 ADT and ORU message feeds
 **So that** patient admission records are correctly mapped without creating duplicate entries in the enterprise system
 
 **Story Points:** 5
 **Acceptance Criteria:**
 - [ ] Given the patched translation layer, when a Partner Health System A HL7 ADT A01 message is processed, then no duplicate patient record is created
-- [ ] Given the patch, when tested against a 500-message sample from Partner Health System Aâs production feed, then the data drop rate is 0%
+- [ ] Given the patch, when tested against a 500-message sample from Partner Health System A’s production feed, then the data drop rate is 0%
 - [ ] Given the patch deployment, no changes are introduced to the core HL7 v2.3 schema structure used by other partner connections
 
 ---
@@ -60,17 +60,17 @@
 
 ---
 
-## ð§ EPIC 2: Clinician Workflow Optimization â RCM platform Manual Intervention Cases
+## 🟧 EPIC 2: Clinician Workflow Optimization — RCM platform Manual Intervention Cases
 
-**Epic Goal:** Redesign the manual charge entry workflow for non-autonomous RCM platform cases to reduce per-encounter time by â¥40% without adding more than 2 actions to the current physician charting baseline.
+**Epic Goal:** Redesign the manual charge entry workflow for non-autonomous RCM platform cases to reduce per-encounter time by ≥40% without adding more than 2 actions to the current physician charting baseline.
 
 **Business Justification:** Clinician burnout at 12+ sites. Program renewal risk. Manual workflow variation driving billing error patterns that feed Epic 3.
 
 **Acceptance Criteria (Epic Level):**
-- [ ] Manual charge entry time reduced from 8+ minutes to â¤4.5 minutes per encounter at pilot sites
+- [ ] Manual charge entry time reduced from 8+ minutes to ≤4.5 minutes per encounter at pilot sites
 - [ ] Workflow redesign introduces no more than 2 additional clicks vs. current baseline (compliance with Clinician Friction Cap guardrail)
 - [ ] Redesign functions identically on Epic and Cerner EMR environments (EMR neutrality requirement)
-- [ ] Pilot UAT completed at 10 sites with â¥80% hospitalist satisfaction score
+- [ ] Pilot UAT completed at 10 sites with ≥80% hospitalist satisfaction score
 - [ ] RCM platform manual exception rate shows measurable reduction at pilot sites within 2 weeks of deployment
 
 ---
@@ -88,7 +88,7 @@
 
 ---
 
-### Story 2.2: Redesigned Workflow UI â Manual Intervention Screen
+### Story 2.2: Redesigned Workflow UI — Manual Intervention Screen
 **As a** hospitalist managing a non-autonomous RCM platform charge case
 **I need** a simplified charge review and submission screen that surfaces the most likely correct modifier codes in a single view
 **So that** I can review, confirm, and submit a charge in under 4 minutes without navigating between multiple system screens
@@ -98,11 +98,11 @@
 - [ ] Given a non-autonomous RCM platform case, when I open the charge review screen, then the top 3 AI-suggested modifier codes are displayed with confidence scores in a single view
 - [ ] Given the redesigned screen, the complete review-confirm-submit workflow requires no more than current baseline + 2 clicks
 - [ ] Given Epic and Cerner EMR environments, the redesigned screen renders identically with no EMR-specific code branching
-- [ ] Given a usability test with 5 hospitalists, then â¥80% rate the new workflow as faster than the current process
+- [ ] Given a usability test with 5 hospitalists, then ≥80% rate the new workflow as faster than the current process
 
 ---
 
-### Story 2.3: Pilot Deployment & UAT â 10 Sites
+### Story 2.3: Pilot Deployment & UAT — 10 Sites
 **As a** Clinical Operations Field Lead
 **I need** the redesigned workflow deployed to 10 pilot sites with a structured UAT period
 **So that** I can confirm the improvement is real before committing to enterprise-wide rollout
@@ -110,15 +110,15 @@
 **Story Points:** 5
 **Acceptance Criteria:**
 - [ ] Given the pilot deployment, 10 sites are live on the redesigned workflow by end of Sprint 2
-- [ ] Given a 2-week UAT period, hospitalist satisfaction survey results are collected from â¥30 respondents
+- [ ] Given a 2-week UAT period, hospitalist satisfaction survey results are collected from ≥30 respondents
 - [ ] Given UAT results, manual charge entry time measurements are collected and compared against pre-deployment baseline
 - [ ] Given any UAT-identified critical defects, a hotfix process is documented and actioned within 48 hours
 
 ---
 
-## ð¥ EPIC 3: Billing Reconciliation Dashboard â RCM platform Modifier Error Tracking
+## 🟥 EPIC 3: Billing Reconciliation Dashboard — RCM platform Modifier Error Tracking
 
-**Epic Goal:** Build a real-time reconciliation dashboard giving Revenue Cycle visibility into RCM platform modifier mismatch rates, stuck claims, and DSO trend â enabling proactive insurer management and data-driven vendor discussions.
+**Epic Goal:** Build a real-time reconciliation dashboard giving Revenue Cycle visibility into RCM platform modifier mismatch rates, stuck claims, and DSO trend — enabling proactive insurer management and data-driven vendor discussions.
 
 **Business Justification:** $420K in claims currently stuck. DSO exposure growing weekly. CFO escalation path active. Dashboard enables both immediate triage and long-term pattern analysis.
 
@@ -134,20 +134,20 @@
 ### Story 3.1: Data Model & Feed Integration Design
 **As a** Data Engineer
 **I need** a documented data model connecting RCM platform charge output, the modifier review queue, and the billing system claims status feed
-**So that** the dashboard has a reliable, well-structured data foundation that doesnât require manual reconciliation
+**So that** the dashboard has a reliable, well-structured data foundation that doesn’t require manual reconciliation
 
 **Story Points:** 5
 **Acceptance Criteria:**
-- [ ] Given RCM platformâs existing API parameters, a data model is designed that maps charge output fields to billing system claim status fields
+- [ ] Given RCM platform’s existing API parameters, a data model is designed that maps charge output fields to billing system claim status fields
 - [ ] Given the data model, a field-level mapping document is reviewed and approved by the Tech Lead
-- [ ] Given the mapping, a test data feed is established in the staging environment with â¥30 days of historical data
+- [ ] Given the mapping, a test data feed is established in the staging environment with ≥30 days of historical data
 
 ---
 
-### Story 3.2: Dashboard Build â Modifier Error Tracking View
+### Story 3.2: Dashboard Build — Modifier Error Tracking View
 **As a** Revenue Cycle Manager
 **I need** a dashboard that shows me at a glance which modifier codes are generating the most rejections and how much revenue is at risk
-**So that** I can prioritize my teamâs manual review work and bring data to my next call with RCM platform
+**So that** I can prioritize my team’s manual review work and bring data to my next call with RCM platform
 
 **Story Points:** 8
 **Acceptance Criteria:**
@@ -160,16 +160,16 @@
 
 ### Story 3.3: UAT with Revenue Cycle & Go-Live
 **As a** Revenue Cycle Director
-**I need** to validate the dashboard against known claim data before it becomes the teamâs official reporting tool
-**So that** Iâm confident the numbers are accurate before I present them to the CFO
+**I need** to validate the dashboard against known claim data before it becomes the team’s official reporting tool
+**So that** I’m confident the numbers are accurate before I present them to the CFO
 
 **Story Points:** 5
 **Acceptance Criteria:**
-- [ ] Given 3 Revenue Cycle team members in a UAT session, when they validate dashboard figures against their manual reports, then â¥95% of values match within acceptable rounding tolerance
+- [ ] Given 3 Revenue Cycle team members in a UAT session, when they validate dashboard figures against their manual reports, then ≥95% of values match within acceptable rounding tolerance
 - [ ] Given UAT sign-off, the dashboard is promoted to production and communicated to the Revenue Cycle team
 - [ ] Given go-live, a 30-day hypercare period is established with a named PM and engineering contact for issue escalation
 
 ---
 
-*Output generated from WSJF scorecard Â· See [wsjf-scorecard.md](./wsjf-scorecard.md) and [sprint-roadmap.md](./sprint-roadmap.md)*
-*User story format: Standard Agile Â· Acceptance criteria format: Given-When-Then (BDD)*
+*Output generated from WSJF scorecard · See [wsjf-scorecard.md](./wsjf-scorecard.md) and [sprint-roadmap.md](./sprint-roadmap.md)*
+*User story format: Standard Agile · Acceptance criteria format: Given-When-Then (BDD)*

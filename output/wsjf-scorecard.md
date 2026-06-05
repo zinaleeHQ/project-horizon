@@ -12,9 +12,9 @@
 
 | Item # | Title | Filter Applied | Disposition |
 |---|---|---|---|
-| 05 & 14 | SOC 2 / Zero-Trust Re-Certification | Duplicate Consolidation | Merged â Item 05C |
-| 10 | Automated UAT Testing Harness | Acceptance Criteria: No direct business value delivery in this horizon | Not Sprint-Ready â Backlog |
-| 20 | CEO âSomething to Showâ | Acceptance Criteria: No defined output, success metric, or scope | Not Sprint-Ready â Requires Discovery |
+| 05 & 14 | SOC 2 / Zero-Trust Re-Certification | Duplicate Consolidation | Merged → Item 05C |
+| 10 | Automated UAT Testing Harness | Acceptance Criteria: No direct business value delivery in this horizon | Not Sprint-Ready — Backlog |
+| 20 | CEO “Something to Show” | Acceptance Criteria: No defined output, success metric, or scope | Not Sprint-Ready — Requires Discovery |
 | 15 | Hospitalist Performance Analytics | Dependency Block: Requires RCM platform and EMR data pipelines to be stable first | Blocked-Pending Items 01+02 |
 
 ---
@@ -23,12 +23,12 @@
 
 | Rank | # | Title | UBV | TC | RR | JS | **WSJF** | Sprint |
 |---|---|---|---|---|---|---|---|---|
-| 1 | 01 | HL7 Mapping Upgrade â Partner Health System A (cure notice) | 10 | 10 | 9 | 5 | **5.80** | Sprint 1 |
-| 2 | 03 | HealthConnect Schema Upgrade â Partner Cohort Onboarding | 9 | 9 | 10 | 8 | **3.50** | Sprint 1 |
+| 1 | 01 | HL7 Mapping Upgrade — Partner Health System A (cure notice) | 10 | 10 | 9 | 5 | **5.80** | Sprint 1 |
+| 2 | 03 | HealthConnect Schema Upgrade — Partner Cohort Onboarding | 9 | 9 | 10 | 8 | **3.50** | Sprint 1 |
 | 3 | 13 | HIPAA Audit Log Gap Remediation | 8 | 9 | 9 | 5 | **5.20** | Sprint 1 |
 | 4 | 05C | SOC 2 / Zero-Trust Re-Certification (consolidated) | 7 | 8 | 8 | 5 | **4.60** | Sprint 1 |
-| 5 | 04 | Clinician Workflow Optimization â Manual RCM platform Cases | 9 | 7 | 8 | 5 | **4.80** | Sprint 2 |
-| 6 | 19 | Staged Rollout Plan â HL7 Cutover Window | 7 | 9 | 7 | 3 | **7.67** | Sprint 2\* |
+| 5 | 04 | Clinician Workflow Optimization — Manual RCM platform Cases | 9 | 7 | 8 | 5 | **4.80** | Sprint 2 |
+| 6 | 19 | Staged Rollout Plan — HL7 Cutover Window | 7 | 9 | 7 | 3 | **7.67** | Sprint 2\* |
 | 7 | 06+16 | Billing Modifier Claims Reconciliation ($420K DSO) | 10 | 8 | 7 | 8 | **3.13** | Sprint 2 |
 | 8 | 02 | RCM platform Modifier Mismatch Rate Reduction | 9 | 7 | 8 | 8 | **3.00** | Sprint 2 |
 | 9 | 09 | platform v2.4.1 API Compatibility Certification | 8 | 8 | 9 | 3 | **8.33** | Sprint 2\* |
@@ -43,38 +43,38 @@
 
 ---
 
-## Top 3 Epics â Detailed Scoring Rationale
+## Top 3 Epics — Detailed Scoring Rationale
 
-### ð¥ Epic 1: HL7 Data Mapping Upgrade
+### 🥇 Epic 1: HL7 Data Mapping Upgrade
 
-- **UBV: 10** â A 30-day cure notice from a major hospital partner represents direct contract revenue at risk. Loss of the Partner Health System A program would remove a flagship partner from the portfolio.
-- **TC: 10** â Hard external deadline with legal standing. Every sprint of delay increases the probability of contract termination and triggers cascading partner confidence issues.
-- **RR: 9** â Resolving this unblocks Items 07, 17, and partially 03. It also addresses the root-cause data integrity issue driving duplicate patient records across the network.
-- **JS: 5** â Scoped to the translation layer surrounding the existing HealthConnect engine â not a core schema change. Complex integration testing required but well-understood by the EMIS team.
+- **UBV: 10** — A 30-day cure notice from a major hospital partner represents direct contract revenue at risk. Loss of the Partner Health System A program would remove a flagship partner from the portfolio.
+- **TC: 10** — Hard external deadline with legal standing. Every sprint of delay increases the probability of contract termination and triggers cascading partner confidence issues.
+- **RR: 9** — Resolving this unblocks Items 07, 17, and partially 03. It also addresses the root-cause data integrity issue driving duplicate patient records across the network.
+- **JS: 5** — Scoped to the translation layer surrounding the existing HealthConnect engine — not a core schema change. Complex integration testing required but well-understood by the EMIS team.
 - **WSJF: 5.80**
 
 ---
 
-### ð¥ Epic 2: Clinician Workflow Optimization
+### 🥈 Epic 2: Clinician Workflow Optimization
 
-- **UBV: 9** â Directly reduces clinician burnout across 12+ sites with program renewal risk. Reducing manual charge entry time protects the organizationâs talent retention and site director relationships.
-- **TC: 7** â No hard deadline, but site director pushback on program renewal creates compounding relationship risk each sprint itâs delayed.
-- **RR: 8** â Reducing manual exception volume directly improves RCM platform AI accuracy metrics and reduces the billing mismatch rate that drives Epic 3âs dashboard need.
-- **JS: 5** â UI workflow changes across distributed sites with EMR neutrality requirement adds testing complexity. Constrained by the 2-click friction cap guardrail.
+- **UBV: 9** — Directly reduces clinician burnout across 12+ sites with program renewal risk. Reducing manual charge entry time protects the organization’s talent retention and site director relationships.
+- **TC: 7** — No hard deadline, but site director pushback on program renewal creates compounding relationship risk each sprint it’s delayed.
+- **RR: 8** — Reducing manual exception volume directly improves RCM platform AI accuracy metrics and reduces the billing mismatch rate that drives Epic 3’s dashboard need.
+- **JS: 5** — UI workflow changes across distributed sites with EMR neutrality requirement adds testing complexity. Constrained by the 2-click friction cap guardrail.
 - **WSJF: 4.80**
 
-> **Sequencing note:** Raw WSJF ranked Item 06+16 (claims reconciliation) above this epic. Sequencing was overridden: optimizing the workflow that drives manual exceptions must precede building the dashboard that measures them, or Sprint 3âs baseline metric is immediately obsolete.
+> **Sequencing note:** Raw WSJF ranked Item 06+16 (claims reconciliation) above this epic. Sequencing was overridden: optimizing the workflow that drives manual exceptions must precede building the dashboard that measures them, or Sprint 3’s baseline metric is immediately obsolete.
 
 ---
 
-### ð¥ Epic 3: Billing Reconciliation Dashboard
+### 🥉 Epic 3: Billing Reconciliation Dashboard
 
-- **UBV: 10** â $420K in claims directly at risk. CFO escalation path is active. Revenue Cycle and Finance have both flagged this independently.
-- **TC: 8** â Finance has stated a 5-day escalation to CFO if no action plan is communicated. Delay compounds DSO impact weekly.
-- **RR: 7** â Dashboard creates visibility into RCM platform modifier error patterns, enabling data-driven vendor discussions and proactive insurer relationship management.
-- **JS: 8** â Requires stable data feeds from both RCM platform and EMR billing systems. Dependent on Epic 2 workflow stabilization for accurate baseline data.
+- **UBV: 10** — $420K in claims directly at risk. CFO escalation path is active. Revenue Cycle and Finance have both flagged this independently.
+- **TC: 8** — Finance has stated a 5-day escalation to CFO if no action plan is communicated. Delay compounds DSO impact weekly.
+- **RR: 7** — Dashboard creates visibility into RCM platform modifier error patterns, enabling data-driven vendor discussions and proactive insurer relationship management.
+- **JS: 8** — Requires stable data feeds from both RCM platform and EMR billing systems. Dependent on Epic 2 workflow stabilization for accurate baseline data.
 - **WSJF: 3.63**
 
 ---
 
-*Output generated from prompt v1.0 Â· See [wsjf-scoring-prompt.md](../prompts/wsjf-scoring-prompt.md) for the full evaluation engine.*
+*Output generated from prompt v1.0 · See [wsjf-scoring-prompt.md](../prompts/wsjf-scoring-prompt.md) for the full evaluation engine.*
