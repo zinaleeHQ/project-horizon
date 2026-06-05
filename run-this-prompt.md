@@ -1,7 +1,5 @@
 # Try This Yourself — Project Horizon WSJF Prioritization Engine
 
-*Copy everything below this line and paste it into Claude (claude.ai) or any AI assistant. Hit send and wait for the output. The AI will guide you through the next step when it’s done.*
-
 ---
 
 # Prompt: AI-Assisted WSJF Prioritization Engine
@@ -9,6 +7,7 @@
 **Version:** 1.0
 **Framework:** Weighted Shortest Job First (WSJF) — SAFe Standard
 **Author:** Zina Lee, Product Manager
+*Copy everything below this line and paste it into Claude (claude.ai) or any AI assistant. Hit send and wait for the output. The AI will guide you through the next step when it’s done.*
 
 ---
 
@@ -164,11 +163,6 @@ For the top 5 items by final sequence position, produce a Jira-ready summary:
 
 ---
 
-*Prompt Version 1.0 · Framework: WSJF (SAFe) · Built June 2026*
-*See [PROCESS.md](./PROCESS.md) for design decisions behind this prompt architecture.*
-
----
-
 ## DATA FILE 1: Intake Queue
 
 # Data: Stakeholder Intake Queue
@@ -209,10 +203,6 @@ For the top 5 items by final sequence position, produce a Jira-ready summary:
 
 ---
 
-*Source: Simulated stakeholder intake data constructed for portfolio purposes · See [PROCESS.md](./PROCESS.md) for intake design rationale*
-
----
-
 ## DATA FILE 2: Constraint Matrix
 
 # Data: Constraint Matrix
@@ -234,9 +224,6 @@ For the top 5 items by final sequence position, produce a Jira-ready summary:
 | 7 | **Single-Team Scope** | All items must be executable by a single cross-functional team of 6 (2 data engineers, 2 full-stack devs, 1 QA engineer, 1 tech lead). Items requiring a separate team or external resource are flagged for dependency management. | PI planning is scoped to this team only. External dependencies must be escalated outside this exercise. |
 | 8 | **Deployment Window** | Production deployments may only occur during the Friday maintenance window (11 PM – 2 AM). Items requiring mid-sprint deployment are flagged for deployment risk review. | Change management policy. Unscheduled deployments require a P1 exception approved by VP Engineering. |
 
----
-
-*Loaded as structured logic gates in the WSJF scoring prompt · See [wsjf-scoring-prompt.md](../prompts/wsjf-scoring-prompt.md) for how these constraints are applied in the prompt architecture.*
 
 ---
 
