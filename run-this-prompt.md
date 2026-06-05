@@ -7,7 +7,8 @@
 **Version:** 1.0
 **Framework:** Weighted Shortest Job First (WSJF) — SAFe Standard
 **Author:** Zina Lee, Product Manager
-*Copy everything below this line and paste it into Claude (claude.ai) or any AI assistant. Hit send and wait for the output. The AI will guide you through the next step when it’s done.*
+
+*Copy everything below the following line and paste it into Claude (claude.ai) or any AI assistant. Hit send and wait for the output. The AI will guide you through the next step when it’s done.*
 
 ---
 
