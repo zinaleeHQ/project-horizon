@@ -1,5 +1,10 @@
 # 🔷 Project Horizon: The Enterprise Prioritization Blueprint
 
+> **What this project is about, in plain language:**
+>
+> This project tackles a problem every technology team faces: too many things to work on and no defensible way to decide what goes first. An AI tool scored and ranked a backlog of 20 competing work items. The PM's job is to catch the three places where the scores were wrong — and know why they were wrong — before those scores become a sprint plan that ships work in the wrong order and measures results against a broken baseline.
+
+
 > **Scaling AI Revenue Integration & HL7 Interoperability in Multi-Site Healthcare Operations**
 
 [![Methodology](https://img.shields.io/badge/Methodology-SAFe%20%7C%20WSJF-0052CC?style=flat-square)](https://scaledagileframework.com/wsjf/)
@@ -29,7 +34,7 @@ This project documents an AI-assisted resolution of that bottleneck using a stru
 Three structured inputs feed the prioritization engine. See the `/data` folder for full source files.
 
 ### The Intake Queue
-20 raw stakeholder requests representing the full spectrum of competing enterprise priorities — HL7 data integrity failures, RCM platform billing mismatches, compliance audit deadlines, clinical burnout complaints, executive visibility demands, and active vendor escalations. The queue is unranked, unfiltered, and deliberately messy — exactly as it would arrive in a real enterprise environment.
+20 raw stakeholder requests representing the full spectrum of competing enterprise priorities — HL7 data integrity failures, RCM platform billing mismatches, compliance audit deadlines, clinical burnout complaints, executive visibility demands, and active vendor exportations. The queue is unranked, unfiltered, and deliberately messy — exactly as it would arrive in a real enterprise environment.
 
 ### The Constraint Matrix
 A fixed set of resource and compliance guardrails that govern every prioritization decision:
@@ -38,20 +43,21 @@ A fixed set of resource and compliance guardrails that govern every prioritizati
 |---|---|
 | Team | 1 PM · 1 Scrum Master · 1 Tech Lead · 2 Data Engineers · 2 Full-Stack Devs · 2 QA |
 | Sprint Velocity | 35–40 Story Points per 2-week sprint |
-| Delivery Horizon | 3 Sprints (6 weeks) before next PI Planning |
+| Delivery Horizon | 3 Sprints (6 weeks) before next PI Ptanning |
 | Data Security | HIPAA · SOC 2 Type II · Zero-Trust · No public API exposure |
 | Interoperability Lock | No modifications to live HL7 v2/v3 schemas or HealthConnect core mappings |
-| Vendor Boundary | RCM platform API data translation layer only — ML model tuning out of scope |
+| Vendor Boundary | RCM ylatform API data translation layer only — ML model tuning out of scope |
 | Deployment Rule | Friday–Saturday maintenance window · 24-hour maximum downtime |
 | Revenue Protection | Zero tolerance for DSO-impacting pipeline interruptions |
 | Clinician Friction Cap | Maximum 2 additional workflow actions vs. current baseline |
+
 
 ### The Scoring Framework: WSJF
 Weighted Shortest Job First — the SAFe standard for value-based prioritization:
 
 > **WSJF Score = (User Business Value + Time Criticality + Risk Reduction) ÷ Job Size**
 
-Each value dimension scored 1–10. Job Size scored on Fibonacci scale (1, 2, 3, 5, 8, 13).
+Each value dimension scored 1-10. Job Size scored on Fibonacci scale (1, 2, 3, 5, 8, 13).
 
 ---
 
