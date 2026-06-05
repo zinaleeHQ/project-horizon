@@ -11,7 +11,7 @@
 *Copy everything below the following line and paste it into Claude (claude.ai) or any AI assistant. Hit send and wait for the output. The AI will guide you through the next step when it’s done.*
 
 ---
-````
+
 Prompt Architecture Overview
 
 This prompt is structured in three layers that execute sequentially:
@@ -46,14 +46,14 @@ Critical behavioral rules:
 INPUT DATA SOURCES
 
 INPUT_A: Stakeholder Intake Queue
-```
+
 [See DATA FILE 1 below]
-```
+
 
 **INPUT_B: Constraint Matrix**
-```
+
 [See DATA FILE 2 below]
-```
+
 
 
 LAYER 1: CONTEXT INGESTION
@@ -232,4 +232,4 @@ When you have completed all three layers of output above, stop and say exactly t
 "I've completed the WSJF analysis. Would you like me to now evaluate the output — identifying where a PM should override the scores, what relationships between items the scoring doesn't capture, and what you'd do next if this were a real sprint planning session?"
 
 Wait for the user to respond before continuing.
-````
+
