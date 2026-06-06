@@ -16,19 +16,19 @@ This project exists to close that gap honestly: by building something grounded i
 
 ### Why WSJF Over a Value vs. Effort Matrix
 
-I considered both seriously. A Value vs. Effort matrix is more visually intuitive and immediately readable by non-technical stakeholders. But for this specific scenario — a SAFe enterprise team with a defined PI Planning horizon — WSJF was the correct choice for three reasons:
+I considered both seriously. A Value vs. Effort matrix is more visually intuitive and immediately readable by non-technical stakeholders. But for this specific scenario (a SAFe enterprise team with a defined PI Planning horizon), WSJF was the correct choice for three reasons:
 
-**1. Time Criticality is the dominant variable here.** One item in the intake queue (the HL7 mapping upgrade) has a hard 30-day hospital partner contract deadline. A standard Value/Effort matrix treats urgency as a narrative modifier rather than a scored dimension — which would systematically underweight the most time-sensitive item in the queue.
+**1. Time Criticality is the dominant variable here.** One item in the intake queue (the HL7 mapping upgrade) has a hard 30-day hospital partner contract deadline. A standard Value/Effort matrix treats urgency as a narrative modifier rather than a scored dimension, which would systematically underweight the most time-sensitive item in the queue.
 
-**2. WSJF is the SAFe organizational standard.** Using it demonstrates methodology alignment with how enterprise Release Trains actually operate at scale. Choosing a simpler framework would have been easier to explain — but harder to defend in a panel interview with a technical audience.
+**2. WSJF is the SAFe organizational standard.** Using it demonstrates methodology alignment with how enterprise Release Trains actually operate at scale. Choosing a simpler framework would have been easier to explain, but harder to defend in a panel interview with a technical audience.
 
-**3. Cost of Delay framing produces better thinking.** The WSJF question — "what does it cost us every day we don't do this?" — produces materially different answers than "how valuable is this?". The first question captures urgency, risk, and compounding impact. The second captures only static value.
+**3. Cost of Delay framing produces better thinking.** The WSJF question ("what does it cost us every day we don't do this?") produces materially different answers than "how valuable is this?". The first question captures urgency, risk, and compounding impact. The second captures only static value.
 
 ### Why I Built the Constraint Matrix as a Separate Document
 
-Most people using AI for analysis embed constraints directly in the prompt narrative: *"remember we only have three developers..."* I didn't — and the distinction matters.
+Most people using AI for analysis embed constraints directly in the prompt narrative: *"Remember we only have three developers..."* I didn't, and that distinction matters.
 
-When constraints live in prose, the AI treats them as soft context. When they're structured as a matrix with explicit guardrails, the AI treats them as logic gates that filter decisions before scoring begins. The difference in output quality is significant and reproducible.
+When constraints live in prose, the AI treats them as soft context. When they're structured as a matrix with explicit guardrails, the AI treats them as logic gates that filter decisions before scoring begins. The difference in output quality is significant and reproducible, across different AI platforms.
 
 Separating the constraint matrix also makes it **reusable and version-controllable**. If the team's velocity changes next quarter, I update one document. If a compliance requirement changes, I update one document. The prompt doesn't need to change at all.
 
@@ -82,7 +82,7 @@ The output files in this repository reflect mock data, designed to produce a cle
 
 ### The HL7 Mapping Upgrade ranked #8, not #1
 
-In the mock, the HL7 upgrade lands near the top of the priority list — consistent with its TC=10 cure notice. In the live run, it ranked #8 (WSJF 3.50), penalized by a Job Size of 8. Large, necessary work scores poorly under WSJF because the framework is structurally biased toward small, high-value items.
+In the mock, the HL7 upgrade lands near the top of the priority list, which is consistent with its TC=10 cure notice. In the live run, it ranked #8 (WSJF 3.50), penalized by a Job Size of 8. Large, necessary work scores poorly under WSJF because the framework is structurally biased toward small, high-value items.
 
 The PM override stands regardless: a hard external contract deadline is not a dimension to be weighed against job size. HL7 is Sprint 1. But the override is a stronger demonstration of judgment when it's correcting a low score than when it's confirming a high one. Validating the obvious is not the same as knowing when the framework is wrong.
 
@@ -100,7 +100,7 @@ A PM who schedules a documentation sprint over a compliance item or a billing er
 
 ---
 
-These three divergences are a more useful artifact than a clean mock would have been. The prompt works — but "works" means it produces a ranking that requires PM judgment to interpret, not a ranking that can be executed without review.
+These three divergences are a more useful artifact than a clean mock would have been. The prompt works, but "works" means it produces a ranking that requires PM judgment to interpret, not a ranking that can be executed without review.
 
 ---
 
@@ -114,6 +114,6 @@ These three divergences are a more useful artifact than a clean mock would have 
 
 ---
 
-*This document reflects my actual decision-making process in building this project. It is intended to give reviewers — technical and non-technical — an honest view of where the PM thinking ends and the AI tooling begins — and vice-versa.*
+*This document reflects my actual decision-making process in building this project. It is intended to give reviewers (technical and non-technical) an honest view of where the PM thinking ends and the AI tooling begins — and vice-versa.*
 
 *[Back to README](./README.md)*
