@@ -114,6 +114,6 @@ These three divergences are a more useful artifact than a clean mock would have 
 
 ---
 
-*This document reflects my actual decision-making process in building this project. It is intended to give reviewers — technical and non-technical — an honest view of where the PM thinking ends and the AI tooling begins--and vice-versa.*
+*This document reflects my actual decision-making process in building this project. It is intended to give reviewers — technical and non-technical — an honest view of where the PM thinking ends and the AI tooling begins — and vice-versa.*
 
 *[Back to README](./README.md)*
