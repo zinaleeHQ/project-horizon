@@ -1,4 +1,4 @@
-# 🔷 Project Horizon: The Enterprise Prioritization Blueprint
+# Project Horizon: The Enterprise Prioritization Blueprint
 
 > **What this project is about, in plain language:**
 >
