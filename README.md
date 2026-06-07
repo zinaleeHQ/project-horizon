@@ -127,7 +127,21 @@ project-horizon/
 
 With the mock data used here, the WSJF framework scores produce the right sequence of work — but the PM must catch the dependencies the scores alone don't document. If the billing dashboard is deployed before the clinician workflow is fixed, it measures a broken baseline: every future improvement gets compared to a number that includes waste you've already committed to removing. WSJF, or any other methodology, is an input to the decision, not the decision itself.
 
+
 ---
+
+
+## 🚀 Want to Try This Yourself?
+
+This project has a live HTML page with a one-click **Copy Prompt** button that copies the complete prompt for you, including data. Paste/Ctrl-V into Claude, GPT-4, or Gemini — no setup required.
+
+👉 [Open Project Horizon Prompt Copy page](https://zinaleeHQ.github.io/project-horizon/)
+
+Each prompt pauses at a PM judgment checkpoint before the final phase. Answer "yes" when you are ready to move forward. (That pause is the point.)
+
+
+---
+
 
 ## 🔗 Portfolio Navigation
 
