@@ -158,4 +158,4 @@ This is **Agent 1 of 4** in a connected PM portfolio. The three projects tell a 
 
 ---
 
-*Portfolio simulation · All scenario details constructed from publicly available information · No proprietary data from any organization has been used · Built June 2026*
+*Portfolio case studies · All scenario details constructed from publicly available information · No proprietary data from any organization has been used · Built June 2026*
