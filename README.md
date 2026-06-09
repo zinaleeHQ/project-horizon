@@ -154,7 +154,7 @@ This is **Agent 1 of 4** in a connected PM portfolio. The three projects tell a 
 | [Project Signal](https://github.com/zinaleeHQ/project-signal) | How do we keep every stakeholder aligned? | Stakeholder Intelligence · Audience Mapping |
 | [Project Vista](https://github.com/zinaleeHQ/project-vista) | How do we give every stakeholder self-service visibility? | KPI Governance · Data Architecture |
 
-[**← Back to Portfolio Overview**](https://github.com/zinaleeHQ)
+[**← Back to Portfolio Overview**](https://github.com/zinaleeHQ/zinaleeHQ/)
 
 ---
 
