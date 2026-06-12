@@ -145,7 +145,7 @@ Each prompt pauses at a PM judgment checkpoint before the final phase. Answer "y
 
 ## 🔗 Portfolio Navigation
 
-This is **Agent 1 of 4** in a connected PM portfolio. The three projects tell a single end-to-end story:
+This is **Prompt 1 of 4** in a connected PM portfolio. The three projects tell a single end-to-end story:
 
 | Project | Question Answered | Methodology |
 |---|---|---|
