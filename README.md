@@ -4,7 +4,7 @@
 >
 > This project tackles a problem every technology team faces: too many things to work on and no defensible way to decide what goes first. An AI tool scored and ranked a backlog of 20 competing work items. The PM's job is to catch the three places where the scores were wrong — and know why they were wrong — before those scores become a sprint plan that ships work in the wrong order and measures results against a broken baseline.
 >
-> **For the quickest look at how I work, check out [the PROCESS page for Horizon](https://github.com/zinaleeHQ/project-horizon/blob/main/PROCESS.md).**
+> **For the quickest look at how I work**, check out [the PROCESS page for Horizon](https://github.com/zinaleeHQ/project-horizon/blob/main/PROCESS.md).
 
 
 > **Scaling AI Revenue Integration & HL7 Interoperability in Multi-Site Healthcare Operations**
