@@ -14,7 +14,7 @@ The scenario: a multi-site healthcare enterprise, 200+ hospital partners, an HL7
 
 ---
 
-## Why This Matters Outside of Tech
+## ⋈&#xFE0E; Why This Matters Outside of Tech
 
 Every organization eventually runs into the same wall: too many things to do, not enough time or people to do them, and a room full of stakeholders each convinced their thing matters most. A hospital system calls that an intake queue. A law firm calls it docket triage. A case management agency calls it a caseload. Different vocabulary, same math problem.
 
@@ -24,7 +24,7 @@ That's the part that travels. The healthcare scenario below is specific, but the
 
 ---
 
-## What the Engine Got Wrong (And Why That's the Point)
+## ⎔&#xFE0E; What the Engine Got Wrong (And Why That's the Point)
 
 I built a WSJF scoring prompt, fed it 20 real-shaped intake items — HL7 data failures, billing mismatches, compliance deadlines, executive demands, clinician complaints — and let it run against a fixed constraint matrix (team capacity, HIPAA, deployment windows, the usual). Full inputs are in /data if you want to see the mess before it got sorted.
 
@@ -40,7 +40,7 @@ None of this makes WSJF a bad framework. It makes it a framework that needs a pe
 
 ---
 
-## The Sequencing Call
+## ☍&#xFE0E; The Sequencing Call
 
 Raw scoring ranked a billing dashboard epic above a clinician workflow epic. I reversed that for sprint sequencing, because the dashboard measures the exact manual-intervention rate the workflow fix is designed to reduce. Build the dashboard first, and the baseline it establishes is obsolete the moment the workflow fix ships in the following sprint — every future improvement gets measured against a number that already includes waste that's about to disappear.
 
@@ -66,7 +66,7 @@ Sprint 3
 
 ---
 
-## How the Engine Actually Works
+## ⚙&#xFE0E; How the Engine Actually Works
 
 The prompt (/prompts/wsjf-scoring-prompt.md) does four things in sequence: ingests all 20 items plus the constraint matrix, filters out anything that violates a hard compliance or vendor guardrail *before* scoring starts, scores what's left across the WSJF dimensions with reasoning attached to every number, then sequences the results into a 3-sprint plan. Output comes back as Jira-ready epics, not just a ranked list — the full scorecard is in /output/wsjf-scorecard.md.
 
@@ -96,7 +96,7 @@ Maximum 2 additional workflow actions vs. current baseline
 
 ---
 
-## Repository Contents
+## ⌬&#xFE0E; Repository Contents
 
 project-horizon/
 
@@ -124,7 +124,7 @@ project-horizon/
 
 ---
 
-## Try the Prompt Yourself
+## ⧉&#xFE0E; Try the Prompt Yourself
 
 There's a live page with a one-click **Copy Prompt** button — grabs the full prompt plus data, ready to paste into Claude, GPT-4, or Gemini.
 
@@ -134,7 +134,7 @@ It pauses at a judgment checkpoint before the final phase. That pause isn't a bu
 
 ---
 
-## 🔗 Portfolio Navigation
+## ↳&#xFE0E; Portfolio Navigation
 
 This is **Prompt 1 of 4** in a connected PM portfolio. The three projects tell a single end-to-end story:
 
