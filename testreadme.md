@@ -56,7 +56,7 @@ _\*Mock-data score shown. Live run scored this item 3.50 and ranked it #8 — se
 
 ---
 
-## ⚙ How the Engine Actually Works
+## ⚙&#xFE0E; How the Engine Actually Works
 
 The prompt (`/prompts/wsjf-scoring-prompt.md`) does four things in sequence: ingests all 20 items plus the constraint matrix, filters out anything that violates a hard compliance or vendor guardrail *before* scoring starts, scores what's left across the WSJF dimensions with reasoning attached to every number, then sequences the results into a 3-sprint plan. Output comes back as Jira-ready epics, not just a ranked list — the full scorecard is in `/output/wsjf-scorecard.md`.
 
