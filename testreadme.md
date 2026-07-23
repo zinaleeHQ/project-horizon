@@ -10,9 +10,9 @@ I ran a WSJF (Weighted Shortest Job First) scoring engine against the full queue
 
 [→ See the rest of the judgment calls in PROCESS.md](https://github.com) — same kind of thinking, more of it, including the two calls I got wrong before I got them right.
 
-[![Methodology](https://shields.io)](https://scaledagileframework.com) 
-[![Domain](https://shields.io)]() 
-[![Status](https://shields.io)]()
+[![Methodology](https://img.shields.io/badge/Methodology-SAFe%20%7C%20WSJF-0052CC?style=flat-square)](https://scaledagileframework.com/wsjf/)
+[![Domain](https://img.shields.io/badge/Domain-Healthcare%20IT%20%7C%20Revenue%20Cycle-teal?style=flat-square)]()
+[![Status](https://img.shields.io/badge/Status-Portfolio%20Simulation-orange?style=flat-square)]()
 
 ---
 
