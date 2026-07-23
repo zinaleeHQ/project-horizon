@@ -4,7 +4,7 @@
 
 ---
 
-## Why I Built This
+## ⬡&#xFE0E; Why I Built This
 
 I've spent years as a PM in environments where AI tools were restricted or unavailable — including federal contracting work where the security posture simply didn't permit it. That means my AI fluency has lived entirely in theory: frameworks, certifications, strategic understanding — but no portfolio artifacts to show for it.
 
@@ -12,9 +12,9 @@ This project exists to close that gap honestly: by building something grounded i
 
 ---
 
-## The Strategic Decisions I Made
+## ⌗&#xFE0E; The Strategic Decisions I Made
 
-### Why WSJF Over a Value vs. Effort Matrix
+### ☍&#xFE0E; Why WSJF Over a Value vs. Effort Matrix
 
 I considered both seriously. A Value vs. Effort matrix is more visually intuitive and immediately readable by non-technical stakeholders. But for this specific scenario (a SAFe enterprise team with a defined PI Planning horizon), WSJF was the correct choice for three reasons:
 
@@ -24,7 +24,7 @@ I considered both seriously. A Value vs. Effort matrix is more visually intuitiv
 
 **3. Cost of Delay framing produces better thinking.** The WSJF question ("what does it cost us every day we don't do this?") produces materially different answers than "how valuable is this?". The first question captures urgency, risk, and compounding impact. The second captures only static value.
 
-### Why I Built the Constraint Matrix as a Separate Document
+### ☍&#xFE0E; Why I Built the Constraint Matrix as a Separate Document
 
 Most people using AI for analysis embed constraints directly in the prompt narrative: *"Remember we only have three developers..."* I didn't, and that distinction matters.
 
@@ -32,7 +32,7 @@ When constraints live in prose, the AI treats them as soft context. When they're
 
 Separating the constraint matrix also makes it **reusable and version-controllable**. If the team's velocity changes next quarter, I update one document. If a compliance requirement changes, I update one document. The prompt doesn't need to change at all.
 
-### Why I Overrode the Raw WSJF Ranking for Sprint Sequencing
+### ☍&#xFE0E; Why I Overrode the Raw WSJF Ranking for Sprint Sequencing
 
 The raw WSJF score ranked Epic 3 (Billing Reconciliation Dashboard) above Epic 2 (Clinician Workflow Optimization). I overrode this for sequencing purposes based on a technical dependency the scoring matrix doesn't capture:
 
@@ -43,21 +43,21 @@ This is the kind of judgment call that a scoring engine surfaces but cannot make
 ---
 
 
-### A Note on SAFe Terminology
+### ⬡&#xFE0E; A Note on SAFe Terminology
 
 The work items in this project are called "Epics" in the Jira sense — large, team-deliverable items scoped within a single PI. In strict SAFe, these would be Features: PI-bound items that feed into Portfolio-level Epics, WSJF’d at the Program Backlog level rather than the Portfolio level. SAFe Epics can cross PI boundaries; the items here cannot and do not. The distinction is deliberate — this project applies WSJF at the Feature/team level, which is the more common real-world application for a single-team context.
 
 ---
 
-## How I Directed the AI
+## ☍&#xFE0E; How I Directed the AI
 
-### What the AI Did
+### ⌬&#xFE0E; What the AI Did
 - Drafted the 20-item intake queue based on scenario parameters and known technology architecture
 - Applied WSJF scoring criteria consistently across all items once dimensions were defined
 - Generated the formatted output documents (scorecard tables, Jira story structure, roadmap layout)
 - Provided a research synthesis of publicly available technology partnerships and infrastructure
 
-### What I Decided
+### ⌬&#xFE0E; What I Decided
 - The choice of WSJF as the scoring framework
 - The specific guardrail values in the constraint matrix
 - The dimensional weights and scoring rationale for each intake item
@@ -65,7 +65,7 @@ The work items in this project are called "Epics" in the Jira sense — large, t
 - The framing and narrative of every public-facing document
 - The determination that this scenario is realistic and defensible based on public information
 
-### The Prompt Engineering Approach
+### ⌬&#xFE0E; The Prompt Engineering Approach
 
 The WSJF scoring prompt '`/prompts/wsjf-scoring-prompt.md`' is structured in three layers: context ingestion, audience variable logic, and output enforcement. The key design decisions were:
 
@@ -76,23 +76,23 @@ The WSJF scoring prompt '`/prompts/wsjf-scoring-prompt.md`' is structured in thr
 
 ---
 
-## What Happened When I Actually Ran It
+## ⌗&#xFE0E; What Happened When I Actually Ran It
 
 The output files in this repository reflect mock data, designed to produce a clean and readable demonstration. When I ran the prompt live against the actual data files, the results diverged from the mock in three instructive ways.
 
-### The HL7 Mapping Upgrade ranked #8, not #1
+### ☍&#xFE0E; The HL7 Mapping Upgrade ranked #8, not #1
 
 In the mock, the HL7 upgrade lands near the top of the priority list, which is consistent with its TC=10 cure notice. In the live run, it ranked #8 (WSJF 3.50), penalized by a Job Size of 8. Large, necessary work scores poorly under WSJF because the framework is structurally biased toward small, high-value items.
 
 The PM override stands regardless: a hard external contract deadline is not a dimension to be weighed against job size. HL7 is Sprint 1. But the override is a stronger demonstration of judgment when it's correcting a low score than when it's confirming a high one. Validating the obvious is not the same as knowing when the framework is wrong.
 
-### Items 02 and 09 are probably the same root cause
+### ☍&#xFE0E; Items 02 and 09 are probably the same root cause
 
 The intake queue treats Item 02 (elevated OB modifier mismatch rate) and Item 09 (v2.4.1 API compatibility) as separate work items. The live run flagged them as likely the same root cause: the undocumented parameter change in v2.4.1 is the probable source of the mismatch rate increase.
 
 Treating them as two epics means fixing the symptom in one sprint and the cause in another — with the mismatch rate potentially rising again in between. A real implementation would consolidate these as a single root-cause epic before sprint planning begins. This relationship was not documented in the data files; the prompt surfaced it from context.
 
-### Item 18 (documentation) scored #1 at WSJF 10.0
+### ☍&#xFE0E; Item 18 (documentation) scored #1 at WSJF 10.0
 
 Documentation updates carry a Job Size of 1. That makes them mathematically guaranteed to score near the top of any WSJF ranking, regardless of actual priority. Item 18 outscored every clinical, financial, and compliance item in the queue — not because documentation is the most important work, but because the framework has no way to distinguish between "small" and "trivial."
 
@@ -104,7 +104,7 @@ These three divergences are a more useful artifact than a clean mock would have 
 
 ---
 
-## What I'd Do Differently With Real Data
+## ⬡&#xFE0E; What I'd Do Differently With Real Data
 
 **1. Stakeholder interviews before scoring.** The WSJF dimension values I assigned were estimated from scenario logic. Real User Business Value and Time Criticality scores require structured stakeholder input — typically a 30-minute facilitated scoring session with domain leads from each affected team.
 
