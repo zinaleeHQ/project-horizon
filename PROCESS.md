@@ -18,9 +18,9 @@ This project exists to close that gap honestly: by building something grounded i
 
 I considered both seriously. A Value vs. Effort matrix is more visually intuitive and immediately readable by non-technical stakeholders. But for this specific scenario (a SAFe enterprise team with a defined PI Planning horizon), WSJF was the correct choice for three reasons:
 
-* ›&#xFE0E; **Time Criticality is the dominant variable here.** One item in the intake queue (the HL7 mapping upgrade) has a hard 30-day hospital partner contract deadline. A standard Value/Effort matrix treats urgency as a narrative modifier rather than a scored dimension, which would systematically underweight the most time-sensitive item in the queue.
-* ›&#xFE0E; **WSJF is the SAFe organizational standard.** Using it demonstrates methodology alignment with how enterprise Release Trains actually operate at scale. Choosing a simpler framework would have been easier to explain, but harder to defend in a panel interview with a technical audience.
-* ›&#xFE0E; **Cost of Delay framing produces better thinking.** The WSJF question ("what does it cost us every day we don't do this?") produces materially different answers than "how valuable is this?". The first question captures urgency, risk, and compounding impact. The second captures only static value.
+›&#xFE0E; **Time Criticality is the dominant variable here.** One item in the intake queue (the HL7 mapping upgrade) has a hard 30-day hospital partner contract deadline. A standard Value/Effort matrix treats urgency as a narrative modifier rather than a scored dimension, which would systematically underweight the most time-sensitive item in the queue.
+›&#xFE0E; **WSJF is the SAFe organizational standard.** Using it demonstrates methodology alignment with how enterprise Release Trains actually operate at scale. Choosing a simpler framework would have been easier to explain, but harder to defend in a panel interview with a technical audience.
+›&#xFE0E; **Cost of Delay framing produces better thinking.** The WSJF question ("what does it cost us every day we don't do this?") produces materially different answers than "how valuable is this?". The first question captures urgency, risk, and compounding impact. The second captures only static value.
 
 ### ⎔&#xFE0E; Why I Built the Constraint Matrix as a Separate Document
 
