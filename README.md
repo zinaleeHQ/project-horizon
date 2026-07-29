@@ -14,7 +14,7 @@ The scenario: a multi-site healthcare enterprise, 200+ hospital partners, an HL7
 
 ---
 
-## #xFE0E; Why This Matters Outside of Tech
+## ⬡&#xFE0E; Why This Matters Outside of Tech
 
 Every organization eventually runs into the same wall: too many things to do, not enough time or people to do them, and a room full of stakeholders each convinced their thing matters most. A hospital system calls that an intake queue. A law firm calls it docket triage. A case management agency calls it a caseload. Different vocabulary, same math problem.
 
