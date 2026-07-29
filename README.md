@@ -127,7 +127,7 @@ It pauses at a judgment checkpoint before the final phase. That pause isn't a bu
 
 ## ↳&#xFE0E; Portfolio Navigation
 
-This is **Prompt 1 of 4** in a connected PM portfolio. The three projects tell a single end-to-end story:
+This is **Prompt 1 of 4** in a connected PM portfolio. The four projects tell a single end-to-end story:
 | Project | Question Answered | Methodology |
 |---|---|---|
 | **Project Horizon** (this repo) | What do we build and when? | SAFe · WSJF |
