@@ -14,7 +14,7 @@ The scenario: a multi-site healthcare enterprise, 200+ hospital partners, an HL7
 
 ---
 
-## ⋈&#xFE0E; Why This Matters Outside of Tech
+## #xFE0E; Why This Matters Outside of Tech
 
 Every organization eventually runs into the same wall: too many things to do, not enough time or people to do them, and a room full of stakeholders each convinced their thing matters most. A hospital system calls that an intake queue. A law firm calls it docket triage. A case management agency calls it a caseload. Different vocabulary, same math problem.
 
@@ -24,17 +24,17 @@ That's the part that travels. The healthcare scenario below is specific, but the
 
 ---
 
-## ⎔&#xFE0E; What the Engine Got Wrong (And Why That's the Point)
+## ⟹&#xFE0E; What the Engine Got Wrong (And Why That's the Point)
 
 I built a WSJF scoring prompt, fed it 20 real-shaped intake items — HL7 data failures, billing mismatches, compliance deadlines, executive demands, clinician complaints — and let it run against a fixed constraint matrix (team capacity, HIPAA, deployment windows, the usual). Full inputs are in /data if you want to see the mess before it got sorted.
 
 Three things happened that a clean demo never would have shown me:
 
-A **documentation item scored #1**, WSJF 10.0 — ahead of a compliance item and a live billing error — because it had a Job Size of 1 and WSJF has no way to tell "small" from "trivial." A PM who ships that ranking without reading it has let a spreadsheet make a decision it wasn't built to make.
+* A **documentation item scored #1**, WSJF 10.0 — ahead of a compliance item and a live billing error — because it had a Job Size of 1 and WSJF has no way to tell "small" from "trivial." A PM who ships that ranking without reading it has let a spreadsheet make a decision it wasn't built to make.
 
-The **highest-priority item by contract deadline ranked #8** in the live run, not #1, because a Job Size of 8 dragged its score down. The override held regardless — a hospital partner cure notice doesn't get negotiated against a story-point estimate — but overriding a framework that's *wrong* is a stronger proof of judgment than confirming one that happens to agree with you.
+* The **highest-priority item by contract deadline ranked #8** in the live run, not #1, because a Job Size of 8 dragged its score down. The override held regardless — a hospital partner cure notice doesn't get negotiated against a story-point estimate — but overriding a framework that's *wrong* is a stronger proof of judgment than confirming one that happens to agree with you.
 
-And the engine **flagged a connection I hadn't built into the data**: two intake items I'd scoped as separate epics were probably the same root cause wearing two names. That one wasn't a correction on my part. That was the AI surfacing something worth checking, and me confirming it was right.
+* Finally, the engine **flagged a connection I hadn't built into the data**: two intake items I'd scoped as separate epics were probably the same root cause wearing two names. That one wasn't a correction on my part. That was the AI surfacing something worth checking, and me confirming it was right.
 
 None of this makes WSJF a bad framework. It makes it a framework that needs a person reading the output, which is a different claim — and the one this whole project is actually making.
 
@@ -96,7 +96,7 @@ Maximum 2 additional workflow actions vs. current baseline
 
 ---
 
-## ⌬&#xFE0E; Repository Contents
+## ⌸&#xFE0E; Repository Contents
 
 project-horizon/
 
@@ -124,7 +124,7 @@ project-horizon/
 
 ---
 
-## ⧉&#xFE0E; Try the Prompt Yourself
+## Try the Prompt Yourself
 
 There's a live page with a one-click **Copy Prompt** button — grabs the full prompt plus data, ready to paste into Claude, GPT-4, or Gemini.
 
