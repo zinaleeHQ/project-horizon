@@ -6,7 +6,7 @@ That's the short version of what this project demonstrates: not that AI can prio
 
 The scenario: a multi-site healthcare enterprise, 200+ hospital partners, an HL7 interface engine and an AI-assisted billing platform both running at roughly 85% reliability, and a 20-item intake queue where every stakeholder believes their item is Priority One. Three sprints on the clock before the next PI Planning cycle. No extra headcount. I ran a WSJF (Weighted Shortest Job First) scoring engine against the full queue, then had to catch three places where the math and the reality didn't match.
 
-**[→ See the rest of the judgment calls in PROCESS.md](https://github.com/zinaleeHQ/project-horizon/blob/main/PROCESS.md)\*\* — same kind of thinking, more of it, including the two calls I got wrong before I got them right.
+**[See the rest of the judgment calls in PROCESS.md](https://github.com/zinaleeHQ/project-horizon/blob/main/PROCESS.md)]** — same kind of thinking, more of it, including the two calls I got wrong before I got them right.
 
 [![Methodology](https://img.shields.io/badge/Methodology-SAFe%20%7C%20WSJF-0052CC?style=flat-square)](https://scaledagileframework.com/wsjf/)
 [![Domain](https://img.shields.io/badge/Domain-Healthcare%20IT%20%7C%20Revenue%20Cycle-teal?style=flat-square)]()
