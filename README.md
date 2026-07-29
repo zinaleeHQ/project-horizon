@@ -99,28 +99,17 @@ Maximum 2 additional workflow actions vs. current baseline
 ## ⌸&#xFE0E; Repository Contents
 
 project-horizon/
-
-├── README.md                    ← This document
-
-├── PROCESS.md                   ← PM decision log and AI methodology
-
+├── README.md                         ← This document
+├── PROCESS.md                        ← PM decision log and AI methodology
 ├── /data/
-
-│   ├── intake-queue.md          ← 20 raw stakeholder requests (unranked)
-
-│   └── constraint-matrix.md    ← Team capacity and compliance guardrails
-
+│   ├── constraint-matrix.md          ← The non-negotiable boundaries/gates
+│   └── intake-queue.md               ← The queue before the WSJF scoring engine runs
 ├── /prompts/
-
-│   └── wsjf-scoring-prompt.md  ← The AI prioritization engine
-
+│   └── wsjf-scoring-prompt.md        ← The AI workflow analysis engine
 └── /output/
-
-    ├── wsjf-scorecard.md        ← Full WSJF scoring matrix (all 20 items)
-
-    ├── sprint-roadmap.md        ← 3-sprint delivery plan
-
-    └── jira-backlog.md          ← Jira-ready Epics and User Stories
+    ├── jira-backlog.md               ← WSJF Scorecard Top 3 Jira-ready Epics
+    ├── sprint-roadmap.md             ← 3-Sprint Delivery Roadmap
+    └── wsjf-scorecard.md             ← WSJF Scoring Results
 
 ---
 
