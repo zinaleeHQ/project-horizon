@@ -98,6 +98,7 @@ Maximum 2 additional workflow actions vs. current baseline
 
 ## ⌸&#xFE0E; Repository Contents
 
+```
 project-horizon/
 ├── README.md                         ← This document
 ├── PROCESS.md                        ← PM decision log and AI methodology
@@ -107,9 +108,10 @@ project-horizon/
 ├── /prompts/
 │   └── wsjf-scoring-prompt.md        ← The AI workflow analysis engine
 └── /output/
-│   ├── jira-backlog.md               ← WSJF Scorecard Top 3 Jira-ready Epics
-│   ├── sprint-roadmap.md             ← 3-Sprint Delivery Roadmap
-│   └── wsjf-scorecard.md             ← WSJF Scoring Results
+    ├── jira-backlog.md               ← WSJF Scorecard Top 3 Jira-ready Epics
+    ├── sprint-roadmap.md             ← 3-Sprint Delivery Roadmap
+    └── wsjf-scorecard.md             ← WSJF Scoring Results
+```
 
 ---
 
