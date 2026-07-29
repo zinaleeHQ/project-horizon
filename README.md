@@ -137,5 +137,7 @@ This is **Prompt 1 of 4** in a connected PM portfolio. The four projects tell a 
 
 [**← Back to Portfolio Overview**](https://github.com/zinaleeHQ/zinaleeHQ/)
 
----*Portfolio case study · Built from publicly available information · No proprietary data used · June 2026*
+---
+
+*Portfolio case study · Built from publicly available information · No proprietary data used · June 2026*
 
