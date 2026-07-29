@@ -29,9 +29,9 @@ Most people using AI for analysis embed constraints directly in the prompt narra
 When constraints live in prose, the AI treats them as soft context. When they're structured as a matrix with explicit guardrails, the AI treats them as logic gates that filter decisions before scoring begins. The difference in output quality is significant and reproducible, across different AI platforms.
 
 Separating the constraint matrix also makes it **reusable and version-controllable**:
-* ›&#xFE0E; If the team's velocity changes next quarter, I update one document.
-* ›&#xFE0E; If a compliance requirement changes, I update one document.
-* ›&#xFE0E; The prompt doesn't need to change at all.
+* If the team's velocity changes next quarter, I update one document.
+* If a compliance requirement changes, I update one document.
+* The prompt doesn't need to change at all.
 
 ### ☍&#xFE0E; Why I Overrode the Raw WSJF Ranking for Sprint Sequencing
 
@@ -54,27 +54,27 @@ SAFe Epics can cross PI boundaries; the items here cannot and do not. The distin
 ## ⚙&#xFE0E; How I Directed the AI
 
 ### ⌸&#xFE0E; What the AI Did
-* ↳&#xFE0E; Drafted the 20-item intake queue based on scenario parameters and known technology architecture
-* ↳&#xFE0E; Applied WSJF scoring criteria consistently across all items once dimensions were defined
-* ↳&#xFE0E; Generated the formatted output documents (scorecard tables, Jira story structure, roadmap layout)
-* ↳&#xFE0E; Provided a research synthesis of publicly available technology partnerships and infrastructure
+* Drafted the 20-item intake queue based on scenario parameters and known technology architecture
+* Applied WSJF scoring criteria consistently across all items once dimensions were defined
+* Generated the formatted output documents (scorecard tables, Jira story structure, roadmap layout)
+* Provided a research synthesis of publicly available technology partnerships and infrastructure
 
 ### ∴&#xFE0E; What I Decided
-* ↳&#xFE0E; The choice of WSJF as the scoring framework
-* ↳&#xFE0E; The specific guardrail values in the constraint matrix
-* ↳&#xFE0E; The dimensional weights and scoring rationale for each intake item
-* ↳&#xFE0E; The sprint sequencing override for Epics 2 and 3
-* ↳&#xFE0E; The framing and narrative of every public-facing document
-* ↳&#xFE0E; The determination that this scenario is realistic and defensible based on public information
+* The choice of WSJF as the scoring framework
+* The specific guardrail values in the constraint matrix
+* The dimensional weights and scoring rationale for each intake item
+* The sprint sequencing override for Epics 2 and 3
+* The framing and narrative of every public-facing document
+* The determination that this scenario is realistic and defensible based on public information
 
 ### ⎔&#xFE0E; The Prompt Engineering Approach
 
 The WSJF scoring prompt `/prompts/wsjf-scoring-prompt.md` is structured in three layers: context ingestion, audience variable logic, and output enforcement. The key design decisions were:
 
-* ›&#xFE0E; **Separating constraint filtering from scoring** so that hard guardrails (HIPAA, vendor boundaries, deployment rules) eliminate ineligible items *before* WSJF math begins
-* ›&#xFE0E; **Requiring explicit reasoning per item** rather than just a score, to surface the logic behind each number and make it auditable
-* ›&#xFE0E; **Enforcing structured output format** (JSON-compatible markdown tables) so the output feeds directly into downstream Jira tooling without manual reformatting
-* ›&#xFE0E; **Including a sequencing instruction** that asks the AI to flag dependency relationships it identifies, which I then validated against my own technical judgment
+* **Separating constraint filtering from scoring** so that hard guardrails (HIPAA, vendor boundaries, deployment rules) eliminate ineligible items *before* WSJF math begins
+* **Requiring explicit reasoning per item** rather than just a score, to surface the logic behind each number and make it auditable
+* **Enforcing structured output format** (JSON-compatible markdown tables) so the output feeds directly into downstream Jira tooling without manual reformatting
+* **Including a sequencing instruction** that asks the AI to flag dependency relationships it identifies, which I then validated against my own technical judgment
 
 ---
 
@@ -108,9 +108,9 @@ These three divergences are a more useful artifact than a clean mock would have 
 
 ## ↳&#xFE0E; What I'd Do Differently With Real Data
 
-* ›&#xFE0E; **1. Stakeholder interviews before scoring.** The WSJF dimension values I assigned were estimated from scenario logic. Real User Business Value and Time Criticality scores require structured stakeholder input — typically a 30-minute facilitated scoring session with domain leads from each affected team.
-* ›&#xFE0E; **2. Velocity calibration from sprint history.** I used 35–40 story points as team velocity. A real team's velocity is drawn from their actual sprint history — typically a 6-sprint rolling average that accounts for holidays, onboarding, and technical debt cycles.
-* ›&#xFE0E; **3. Full dependency mapping before sequencing.** The output documents note the Epic 2/3 dependency, but a real implementation would include a complete dependency map across all 20 items before any sequencing decisions are made. Non-obvious dependencies (a compliance item that blocks a data pipeline item, for example) frequently change the optimal sequence in ways that raw WSJF scoring cannot detect.
+* **1. Stakeholder interviews before scoring.** The WSJF dimension values I assigned were estimated from scenario logic. Real User Business Value and Time Criticality scores require structured stakeholder input — typically a 30-minute facilitated scoring session with domain leads from each affected team.
+* **2. Velocity calibration from sprint history.** I used 35–40 story points as team velocity. A real team's velocity is drawn from their actual sprint history — typically a 6-sprint rolling average that accounts for holidays, onboarding, and technical debt cycles.
+* **3. Full dependency mapping before sequencing.** The output documents note the Epic 2/3 dependency, but a real implementation would include a complete dependency map across all 20 items before any sequencing decisions are made. Non-obvious dependencies (a compliance item that blocks a data pipeline item, for example) frequently change the optimal sequence in ways that raw WSJF scoring cannot detect.
 
 ---
 
