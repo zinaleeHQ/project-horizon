@@ -108,9 +108,9 @@ These three divergences are a more useful artifact than a clean mock would have 
 
 ## ↳&#xFE0E; What I'd Do Differently With Real Data
 
-* **1. Stakeholder interviews before scoring.** The WSJF dimension values I assigned were estimated from scenario logic. Real User Business Value and Time Criticality scores require structured stakeholder input — typically a 30-minute facilitated scoring session with domain leads from each affected team.
-* **2. Velocity calibration from sprint history.** I used 35–40 story points as team velocity. A real team's velocity is drawn from their actual sprint history — typically a 6-sprint rolling average that accounts for holidays, onboarding, and technical debt cycles.
-* **3. Full dependency mapping before sequencing.** The output documents note the Epic 2/3 dependency, but a real implementation would include a complete dependency map across all 20 items before any sequencing decisions are made. Non-obvious dependencies (a compliance item that blocks a data pipeline item, for example) frequently change the optimal sequence in ways that raw WSJF scoring cannot detect.
+* **Stakeholder interviews before scoring.** The WSJF dimension values I assigned were estimated from scenario logic. Real User Business Value and Time Criticality scores require structured stakeholder input — typically a 30-minute facilitated scoring session with domain leads from each affected team.
+* **Velocity calibration from sprint history.** I used 35–40 story points as team velocity. A real team's velocity is drawn from their actual sprint history — typically a 6-sprint rolling average that accounts for holidays, onboarding, and technical debt cycles.
+* **Full dependency mapping before sequencing.** The output documents note the Epic 2/3 dependency, but a real implementation would include a complete dependency map across all 20 items before any sequencing decisions are made. Non-obvious dependencies (a compliance item that blocks a data pipeline item, for example) frequently change the optimal sequence in ways that raw WSJF scoring cannot detect.
 
 ---
 
