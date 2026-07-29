@@ -107,9 +107,9 @@ project-horizon/
 ├── /prompts/
 │   └── wsjf-scoring-prompt.md        ← The AI workflow analysis engine
 └── /output/
-    ├── jira-backlog.md               ← WSJF Scorecard Top 3 Jira-ready Epics
-    ├── sprint-roadmap.md             ← 3-Sprint Delivery Roadmap
-    └── wsjf-scorecard.md             ← WSJF Scoring Results
+│   ├── jira-backlog.md               ← WSJF Scorecard Top 3 Jira-ready Epics
+│   ├── sprint-roadmap.md             ← 3-Sprint Delivery Roadmap
+│   └── wsjf-scorecard.md             ← WSJF Scoring Results
 
 ---
 
