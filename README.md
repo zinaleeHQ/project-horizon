@@ -128,17 +128,11 @@ It pauses at a judgment checkpoint before the final phase. That pause isn't a bu
 ## ↳&#xFE0E; Portfolio Navigation
 
 This is **Prompt 1 of 4** in a connected PM portfolio. The three projects tell a single end-to-end story:
-
 | Project | Question Answered | Methodology |
-
 |---|---|---|
-
 | **Project Horizon** (this repo) | What do we build and when? | SAFe · WSJF |
-
 | [Project Clarity](https://github.com/zinaleeHQ/project-clarity) | How do we change how people work? | Lean · DMAIC |
-
 | [Project Signal](https://github.com/zinaleeHQ/project-signal) | How do we keep every stakeholder aligned? | Stakeholder Intelligence · Audience Mapping |
-
 | [Project Vista](https://github.com/zinaleeHQ/project-vista) | How do we give every stakeholder self-service visibility? | KPI Governance · Data Architecture |
 
 [**← Back to Portfolio Overview**](https://github.com/zinaleeHQ/zinaleeHQ/)
