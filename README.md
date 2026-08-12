@@ -44,22 +44,12 @@ None of this makes WSJF a bad framework. It makes it a framework that needs a pe
 
 Raw scoring ranked a billing dashboard epic above a clinician workflow epic. I reversed that for sprint sequencing, because the dashboard measures the exact manual-intervention rate the workflow fix is designed to reduce. Build the dashboard first, and the baseline it establishes is obsolete the moment the workflow fix ships in the following sprint — every future improvement gets measured against a number that already includes waste that's about to disappear.
 
-Rank
-Epic
-WSJF Score
-Sprint
-**1**
-HL7 Data Mapping Upgrade
-**6.33***
-Sprint 1
-**2**
-Clinician Workflow Optimization
-**4.67**
-Sprint 2
-**3**
-Billing Reconciliation Dashboard
-**3.63**
-Sprint 3
+
+| Rank | Epic | WSJF Score | Sprint |
+| :--- | :--- | :--- | :--- |
+| 1 | HL7 Data Mapping Upgrade | 6.33* | Sprint 1 |
+| 2 | Clinician Workflow Optimization | 4.67 | Sprint 2 |
+| 3 | Billing Reconciliation Dashboard | 3.63 | Sprint 3 |
 
 
 *\*Mock-data score shown. Live run scored this item 3.50 and ranked it #8 — see PROCESS.md for what that divergence meant.*
@@ -72,26 +62,18 @@ The prompt (/prompts/wsjf-scoring-prompt.md) does four things in sequence: inges
 
 The constraint matrix lives as its own document rather than buried in the prompt text, mainly because that changes how the AI treats it. Constraints written into prose get weighed like everything else. Constraints structured as a matrix get treated as gates — filtering decisions out before scoring, not softening them during scoring. Worth knowing if you're building something similar.
 
-Constraint
-Value
-Team
-1 PM · 1 Scrum Master · 1 Tech Lead · 2 Data Engineers · 2 Full-Stack Devs · 2 QA
-Sprint Velocity
-35–40 Story Points per 2-week sprint
-Delivery Horizon
-3 Sprints (6 weeks) before next PI Planning
-Data Security
-HIPAA · SOC 2 Type II · Zero-Trust · No public API exposure
-Interoperability Lock
-No modifications to live HL7 v2/v3 schemas or HealthConnect core mappings
-Vendor Boundary
-RCM platform API data translation layer only — ML model tuning out of scope
-Deployment Rule
-Friday–Saturday maintenance window · 24-hour maximum downtime
-Revenue Protection
-Zero tolerance for DSO-impacting pipeline interruptions
-Clinician Friction Cap
-Maximum 2 additional workflow actions vs. current baseline
+
+| Constraint | Value |
+| :--- | :--- |
+| **Team** | 1 PM · 1 Scrum Master · 1 Tech Lead · 2 Data Engineers · 2 Full-Stack Devs · 2 QA |
+| **Sprint Velocity** | 35–40 Story Points per 2-week sprint |
+| **Delivery Horizon** | 3 Sprints (6 weeks) before next PI Planning |
+| **Data Security** | HIPAA · SOC 2 Type II · Zero-Trust · No public API exposure |
+| **Interoperability Lock** | No modifications to live HL7 v2/v3 schemas or HealthConnect core mappings |
+| **Vendor Boundary** | RCM platform API data translation layer only — ML model tuning out of scope |
+| **Deployment Rule** | Friday–Saturday maintenance window · 24-hour maximum downtime |
+| **Revenue Protection** | Zero tolerance for DSO-impacting pipeline interruptions |
+| **Clinician Friction Cap** | Maximum 2 additional workflow actions vs. current baseline |
 
 
 ---
