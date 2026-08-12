@@ -101,7 +101,7 @@ project-horizon/
 
 There's a live page with a one-click **Copy Prompt** button — grabs the full prompt plus data, ready to paste into Claude, GPT-4, or Gemini.
 
-↳︎&#xFE0E; [Open Project Horizon Prompt Copy page](https://zinaleeHQ.github.io/project-horizon/)
+›︎ [Open Project Horizon Prompt Copy page](https://zinaleeHQ.github.io/project-horizon/)
 
 It pauses at a judgment checkpoint before the final phase. That pause isn't a bug — it's where the PM is supposed to be reading, not clicking through.
 
