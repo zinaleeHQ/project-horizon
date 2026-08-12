@@ -65,7 +65,7 @@ The constraint matrix lives as its own document rather than buried in the prompt
 
 | Constraint | Value |
 | :--- | :--- |
-| **Team** | 1 PM · 1 Scrum Master · 1 Tech Lead · 2 Data Engineers · 2 Full-Stack Devs · 2 QA |
+| **Team** | 1 Product Owner · 1 Scrum Master · 1 Tech Lead · 2 Data Engineers · 2 Full-Stack Devs · 2 QA |
 | **Sprint Velocity** | 35–40 Story Points per 2-week sprint |
 | **Delivery Horizon** | 3 Sprints (6 weeks) before next PI Planning |
 | **Data Security** | HIPAA · SOC 2 Type II · Zero-Trust · No public API exposure |
